@@ -1,10 +1,25 @@
 {
     "name": "iuravic/duktig-auryn-adapter",
     "type": "library",
-    "authors": [
-        {"name": "Ivan Uravić", "email": "iuravic@gmail.com"}
+    "description": "Auryn adapter for Duktig MVC micro web framework",
+    "keywords": [
+        "Duktig",
+        "framework",
+        "adapter",
+        "Auryn",
+        "container",
+        "IoC"
     ],
-    "license": ["MIT"],
+    "homepage": "https://github.com/iuravic/duktig-auryn-adapter",
+    "license": [
+        "MIT"
+    ],
+    "authors": [
+        {
+            "name": "Ivan Uravić",
+            "email": "iuravic@gmail.com"
+        }
+    ],
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
