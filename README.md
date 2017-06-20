@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/iuravic/duktig-auryn-adapter.svg?branch=master)](https://travis-ci.org/iuravic/duktig-auryn-adapter)
+[![Build Status](https://travis-ci.org/iuravic/duktig-auryn-adapter.svg?branch=master)](https://travis-ci.org/iuravic/duktig-auryn-adapter) [![Coverage Status](https://coveralls.io/repos/github/iuravic/duktig-auryn-adapter/badge.svg?branch=master)](https://coveralls.io/github/iuravic/duktig-auryn-adapter?branch=master)
 
 # duktig-auryn-adapter
 
