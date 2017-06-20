@@ -30,6 +30,31 @@ class AurynAdapterTest extends TestCase
         $adapter = new AurynAdapter($mockContainer);
         $adapter->get('serviceID');
     }
+    
+    public function testAlias()
+    {
+        $mockContainer = \Mockery::mock(Container::class);
+        $factory = function() { return new \stdClass(); };
+        $mockContainer->shouldReceive('alias')->once()->with('serviceID', $factory);
+        $adapter = new AurynAdapter($mockContainer);
+        $adapter->alias('serviceID', $factory);
+    }
+    
+    public function testSingleton()
+    {
+        $mockContainer = \Mockery::mock(Container::class);
+        $mockContainer->shouldReceive('share')->once()->with('serviceID');
+        $adapter = new AurynAdapter($mockContainer);
+        $adapter->singleton('serviceID');
+    }
+    
+    public function testFactory()
+    {
+        $mockContainer = \Mockery::mock(Container::class);
+        $mockContainer->shouldReceive('delegate')->once()->with('ClassName', 'serviceID');
+        $adapter = new AurynAdapter($mockContainer);
+        $adapter->factory('ClassName', 'serviceID');
+    }
 
     public function testResolvesClosure()
     {
